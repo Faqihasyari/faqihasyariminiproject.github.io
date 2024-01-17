@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katik Persegi</title>
+    <title>Kalkulator Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Kalkulator Luas dan keliling Persegi</h1>
-        <h4>Welcome to kalkulator luas keliling dan persegi</h4>
-        <p>Web ini digunakan untuk menghitung luas persegi</p>
-    </header>
-    <div class="inputsection">
-        <label for="squareside" id="labelsquareside">Hitung luas persegi</label>
-        <input type="number" id="squareside">
+
+    <div class="container">
+        <h1>Welcome to Kalkulator luas dan keliling Persegi</h1>
+        <h4>Sebuah web untuk menghitung luas dan keliling persegi</h4>
+        <img src="assets/PERSEGI.png">
+        
+        
+        <label for="sideLength">Masukkan Panjang Sisi:</label>
+        <input type="number" id="sideLength" placeholder="Masukkan panjang sisi">
+        
+        <button onclick="hitungLuas()">Hitung Luas</button>
+        <button onclick="hitungKeliling()">Hitung Keliling</button>
+        
+        <div id="result"></div>
     </div>
-    <div class="buttons" >
-        <button class="btn btn-outline-warning" id="countbuttton">Hitung</button>
-        <button class="btn btn-outline-warning" id="reset button">Reset</button>
-    </div>
+
+    <script src="Javascript/ok.js"></script>
 </body>
 </html>
